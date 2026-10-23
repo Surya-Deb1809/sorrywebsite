@@ -1,0 +1,625 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+
+  <title>একটু শোন না, মণি… 💗</title>
+
+  <!-- বাংলা Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Floating Hearts Background -->
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="topbar">
+
+    <a href="#" class="brand" data-home>
+      ♡ শুধু তোমার জন্য
+    </a>
+
+    <button
+      id="musicToggle"
+      class="music-toggle"
+      type="button"
+      aria-pressed="false"
+    >
+      ♫ গান চালাও
+    </button>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================================
+         PAGE 1 : WELCOME PAGE
+    ========================================== -->
+
+    <section class="page active hero" id="page1">
+
+      <div class="tiny-label">
+        একটা ছোট্ট চমক তোমার জন্য 💌
+      </div>
+
+      <div class="hero-art">
+
+        <div class="heart-orbit orbit-one">♥</div>
+
+        <div class="envelope">
+          <div class="envelope-heart">♥</div>
+        </div>
+
+        <div class="heart-orbit orbit-two">♡</div>
+
+      </div>
+
+      <p class="eyebrow">
+        আমার প্রিয় মানুষটার জন্য
+      </p>
+
+      <h1>
+        একটু শোন না,<br>
+        মণি… <span>💗</span>
+      </h1>
+
+      <p class="lead">
+        তোকে কিছু কথা বলার ছিল।
+        অনেক কথা মুখে বলতে পারিনি,
+        তাই আজ লিখে ফেললাম।
+
+        একটু সময় নিয়ে আমার কথাগুলো পড়বি?
+      </p>
+
+      <button class="primary-btn" data-next="page2">
+        তোর জন্য একটা চিঠি আছে 💌 →
+      </button>
+
+      <p class="small-note">
+        শুধু তোর জন্য, মন থেকে বানানো।
+      </p>
+
+    </section>
+
+
+    <!-- =========================================
+         PAGE 2 : OUR MEMORIES
+    ========================================== -->
+
+    <section class="page" id="page2">
+
+      <p class="eyebrow">
+        আমাদের ছোট্ট পৃথিবী 
+      </p>
+
+      <h2>
+        কিছু মুহূর্ত,<br>
+        অনেকটা ভালোবাসা
+      </h2>
+
+      <p class="section-intro">
+        কিছু স্মৃতি ছবিতে থেকে যায়,
+        আর কিছু স্মৃতি থেকে যায় মনের মধ্যে।
+        তুই আমার জীবনের তেমনই একটা মানুষ।
+      </p>
+
+
+      <div class="photo-grid">
+
+        <!-- Photo 1 -->
+
+        <figure class="photo-card tilt-left">
+
+          <img
+            src="3.jpeg"
+            alt="আমাদের প্রথম স্মৃতির ছবি"
+            onerror="this.hidden=true;this.nextElementSibling.hidden=false"
+          >
+
+          <div class="photo-placeholder" hidden>
+            
+          </div>
+
+          <figcaption>
+            তোর হাসিটাই আমার ভীষণ প্রিয়। ❤️
+          </figcaption>
+
+        </figure>
+
+
+        <!-- Photo 2 -->
+
+        <figure class="photo-card tilt-right">
+
+          <img
+            src="1.jpeg"
+            alt="আমাদের সুন্দর একটি মুহূর্ত"
+            onerror="this.hidden=true;this.nextElementSibling.hidden=false"
+          >
+
+          <div class="photo-placeholder" hidden>
+          
+          </div>
+
+          <figcaption>
+            তোর সাথে কাটানো মুহূর্তগুলোই আমার প্রিয় স্মৃতি। 🫶🏻
+          </figcaption>
+
+        </figure>
+
+
+        <!-- Photo 3 -->
+
+        <figure class="photo-card tilt-left">
+
+          <img
+            src="2.jpeg"
+            alt="আমাদের আরও একটি স্মৃতি"
+            onerror="this.hidden=true;this.nextElementSibling.hidden=false"
+          >
+
+          <div class="photo-placeholder" hidden>
+            
+          </div>
+
+          <figcaption>
+            গল্পটা তোর-আমার, আর স্মৃতি জমুক আজীবন। ♾️❤️
+          </figcaption>
+
+        </figure>
+
+      </div>
+
+
+      <div class="nav-row">
+
+        <button class="ghost-btn" data-prev="page1">
+          ← আগের পাতা
+        </button>
+
+        <button class="primary-btn" data-next="page3">
+          এবার চিঠিগুলো পড়বি? 💌 →
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         PAGE 3 : LETTER NUMBER 1
+    ========================================== -->
+
+    <section class="page letter-page" id="page3">
+
+      <p class="eyebrow">
+        চিঠি নং 1 · মন থেকে বলা সরি ❤️
+      </p>
+
+      <h2>
+        কিছু কথা তোকে বলা বাকি ছিল…
+      </h2>
+
+      <div class="letter-card">
+
+        <h3 class="letter-title">
+          প্রিয় মণি, 💗
+        </h3>
+
+
+        <p>
+          জানিস, তোকে এই চিঠিটা লেখার সময় বারবার মনে হচ্ছে,
+          কত কথা তোকে বলা উচিত ছিল, অথচ ঠিক সময়ে বলতে পারিনি।
+        </p>
+
+
+        <p>
+          আমি জানি, তোর জীবনের সবচেয়ে কঠিন সময়গুলোতে তোর
+          যেভাবে যত্ন নেওয়া উচিত ছিল, যেভাবে তোকে সান্ত্বনা
+          দেওয়া উচিত ছিল, আমি সেভাবে পারিনি। তুই যখন কষ্টে
+          ছিলিস, তখন হয়তো তোর শুধু একটু বোঝার মানুষ দরকার ছিল।
+          এমন একজন, যার কাছে তুই মন খুলে কাঁদতে পারবি, নিজের
+          কষ্টগুলো বলতে পারবি, আর যে তোকে বোঝানোর চেষ্টা করবে
+          যে তোর অনুভূতিগুলো গুরুত্বপূর্ণ।
+        </p>
+
+
+        <p>
+          কিন্তু আমি অনেক সময় বুঝতেই পারিনি তোর ঠিক কী দরকার
+          ছিল। তুই চুপ করে থাকলে আমি তোর মনের কথা বুঝতে পারিনি।
+          উল্টে নিজের ভয়, নিজের ভুল ধারণা থেকে তোকে এমন কিছু
+          কথা বলেছি, যেগুলো তোকে আরও কষ্ট দিয়েছে।
+        </p>
+
+
+        <p>
+          আমি তোকে কষ্ট দিতে চাইনি, কিন্তু শুধু কষ্ট দেওয়ার
+          ইচ্ছা ছিল না বললেই তো আমার ভুলগুলো মুছে যায় না।
+          আমার কথায় তুই কষ্ট পেয়ে থাকলে, আমার আচরণে নিজেকে
+          একা মনে করে থাকলে, তার জন্য আমি সত্যিই দুঃখিত।
+        </p>
+
+
+        <p>
+          আমি জানি, একটা “সরি” বললেই সব ঠিক হয়ে যায় না।
+          তুই হয়তো এখনই আমাকে ক্ষমা করতে পারবি না, হয়তো
+          আমার কথাগুলো বিশ্বাস করতেও সময় লাগবে। তবু আমি চাই,
+          তুই জানিস—আমি আমার ভুলগুলো অস্বীকার করছি না।
+        </p>
+
+
+        <p>
+          আমি শুধু চাই, ভবিষ্যতে তোর কষ্টগুলো বুঝতে আরও চেষ্টা
+          করি, তোর কথা মন দিয়ে শুনি, আর তোকে এমন অনুভব না
+          করাই যে তোর অনুভূতিগুলোর কোনো মূল্য আমার কাছে নেই।
+        </p>
+
+
+        <p>
+          আমার ভুলগুলো একদিনে শুধরে ফেলতে পারব কি না জানি না,
+          কিন্তু আমি চেষ্টা করতে চাই। শুধু তোকে হারানোর ভয়ে নয়,
+          বরং তোকে ভালোবাসি বলেই তোর জন্য আরও ভালো একজন
+          মানুষ হতে চাই।
+        </p>
+
+
+        <p>
+          পারলে আমাকে ক্ষমা করে দিস।
+          আর সময় লাগলে সেটাও আমি বুঝব। ❤️
+        </p>
+
+
+        <div class="letter-signature">
+
+          <span>ইতি,</span>
+
+          <strong>তোরই গরু। 🐮❤️</strong>
+
+        </div>
+
+      </div>
+
+
+      <!-- Sorry GIF -->
+
+      <div class="gif-card">
+
+        <img
+          src="images/sorry.gif"
+          alt="একটা মিষ্টি Sorry GIF"
+          onerror="this.hidden=true;this.nextElementSibling.hidden=false"
+        >
+
+        <div class="gif-placeholder" hidden>
+          🥹💗
+          <span>এখানে একটা cute Sorry GIF বসাবি</span>
+        </div>
+
+      </div>
+
+
+      <div class="nav-row">
+
+        <button class="ghost-btn" data-prev="page2">
+          ← আগের পাতা
+        </button>
+
+        <button class="primary-btn" data-next="page4">
+          আরও কিছু কথা আছে… 💌 →
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         PAGE 4 : SPECIAL SONG + LETTER 2
+    ========================================== -->
+
+    <section class="page" id="page4">
+
+      <p class="eyebrow">
+        তোর জন্য একটা গান 🎵
+      </p>
+
+      <h2>
+        এই গানটা শুধু তোর জন্য…
+      </h2>
+
+      <p class="section-intro">
+        কিছু অনুভূতি মুখে বলা যায় না।
+        তাই একটা গান বেছে রেখেছি তোর জন্য।
+        ইচ্ছে হলে গানটা শুনিস। ❤️
+      </p>
+
+
+      <!-- Special Song Player -->
+
+      <div class="music-card">
+
+        <div class="music-art">
+          🎧
+          <span>♡</span>
+        </div>
+
+        <p class="song-label">
+          শুধু তোর জন্য, মণি
+        </p>
+
+        <h3>
+          একটা গান, অনেক অনুভূতি
+        </h3>
+
+        <p class="section-intro">
+          নিচের Play button-এ চাপ দিলে গানটা বাজবে।
+        </p>
+
+        <audio
+          id="song"
+          controls
+          preload="none"
+        >
+
+          <source
+            src="Sundori.mp3"
+            type="audio/mpeg"
+          >
+
+          তোর ব্রাউজার অডিও চালাতে পারছে না।
+
+        </audio>
+
+        
+
+      </div>
+
+
+      <div class="quote">
+        “সব কথা মুখে বলা যায় না,<br>
+        কিছু কথা গানও বলে দেয়…” 💗
+      </div>
+
+
+      <!-- Letter Number 2 -->
+
+      <div class="letter-card second-letter">
+
+        <p class="eyebrow">
+          চিঠি নং 2 · তোর জন্য আমার কিছু কথা
+        </p>
+
+        <h3 class="letter-title">
+          প্রিয় মণি, 🌷
+        </h3>
+
+
+        <p>
+          তোকে নিয়ে লিখতে বসলে বুঝতে পারি, মনের মধ্যে কত কথা
+          জমে আছে। কিন্তু সামনে এলে সেই কথাগুলোই ঠিক করে বলতে
+          পারি না। কখনো চুপ করে যাই, কখনো ভুল কথা বলে ফেলি,
+          আবার কখনো তোর মনের অবস্থা বুঝতে না পেরে এমন কিছু
+          করে বসি, যা তোর খারাপ লাগে।
+        </p>
+
+
+        <p>
+          তুই হয়তো অনেক সময় ভেবেছিস, আমি তোকে ঠিক করে বুঝি না,
+          তোর অনুভূতিগুলো বুঝতে পারি না। সত্যি বলতে, সব সময়
+          পেরেও উঠিনি। কিন্তু তার মানে এই নয় যে তোকে বোঝার
+          ইচ্ছেটা আমার নেই।
+        </p>
+
+
+        <p>
+          আমি চাই, তোর ভালো থাকার দিনগুলোতে যেমন তোর সঙ্গে
+          হাসতে পারি, তেমনই তোর খারাপ থাকার দিনগুলোতেও তোর
+          পাশে থাকার মতো মানুষ হতে পারি। তোর সব সমস্যার
+          সমাধান আমার কাছে থাকবে না, সব প্রশ্নের উত্তরও হয়তো
+          দিতে পারব না। কিন্তু অন্তত তোর কথা মন দিয়ে শুনতে,
+          তোর কষ্টটাকে গুরুত্ব দিতে আর তোর অনুভূতিগুলোকে
+          সম্মান করতে শিখতে চাই।
+        </p>
+
+
+        <p>
+          আমি চাই না, তুই সব সময় শক্ত থাকার চেষ্টা করিস।
+          আমার সামনে তোর মন খারাপ হতে পারে, কান্না পেতে পারে,
+          কোনো কথা বলতে ইচ্ছা না-ও করতে পারে। তোকে সব সময়
+          নিজের কষ্টের ব্যাখ্যা দিতে হবে না। আমি চাই, তুই জানিস
+          যে তোর অনুভূতিগুলো আমার কাছে গুরুত্বপূর্ণ।
+        </p>
+
+
+        <p>
+          আর একটা কথা—আমি চাই না শুধু সুন্দর সুন্দর কথা বলে
+          তোকে আবার সব বিশ্বাস করিয়ে দিতে। আমি চাই, আমার
+          ছোট ছোট কাজের মধ্য দিয়ে তুই নিজেই বুঝতে পারিস যে
+          আমি চেষ্টা করছি। তোর খোঁজ নেওয়া, তোর কথা মনে রাখা,
+          তোর কথা মন দিয়ে শোনা—এই ছোট ছোট জিনিসগুলোতেই যেন
+          তুই আমার যত্নটা অনুভব করতে পারিস।
+        </p>
+
+
+        <p>
+          আমাদের মধ্যে রাগ হবে, অভিমান হবে, ভুল বোঝাবুঝিও
+          হতে পারে। কিন্তু আমি চাই, আমরা দুজনেই যেন একে অপরের
+          কথা শোনার আর বোঝার সুযোগ দিই। আমি আমার ভুলগুলো
+          শুধরাতে চাই, আর তোর কাছ থেকেও আমাদের সম্পর্কটা নিয়ে
+          খোলাখুলি কথা বলতে চাই।
+        </p>
+
+
+        <p>
+          তুই আমার জীবনে গুরুত্বপূর্ণ, মণি। আর তোকে ভালোবাসি
+          বলেই শুধু তোকে নিজের কাছে রাখতে চাই না—তোর অনুভূতি,
+          তোর ইচ্ছা আর তোর নিজের মতো করে থাকার জায়গাটাকেও
+          সম্মান করতে চাই।
+        </p>
+
+
+        <p>
+          আমি জানি না, এই চিঠিটা পড়ে তোর ঠিক কেমন লাগবে।
+          শুধু চাই, তুই আমার কথাগুলোকে একটা প্রতিশ্রুতি হিসেবে
+          নয়, বরং আমার চেষ্টা শুরু করার জায়গা হিসেবে দেখিস।
+        </p>
+
+
+        <div class="letter-signature">
+
+          <span>ভালোবাসা রইল,</span>
+
+          <strong>তোর সূর্য।❤️</strong>
+
+        </div>
+
+      </div>
+
+
+      <div class="nav-row">
+
+        <button class="ghost-btn" data-prev="page3">
+          ← আগের পাতা
+        </button>
+
+        <button class="primary-btn" data-next="page5">
+          শেষ পাতায় যাবি? 💗 →
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         PAGE 5 : FINAL APOLOGY
+    ========================================== -->
+
+    <section class="page final-page" id="page5">
+
+      <p class="eyebrow">
+        শেষ পাতায়, মনের কথা ❤️
+      </p>
+
+      <div class="final-heart">
+        ❤️
+      </div>
+
+      <h2>
+        মণি, আমাকে কি একটুখানি ক্ষমা করতে পারবি?
+      </h2>
+
+
+      <div class="final-letter">
+
+        <p>
+          তোকে এই কথাগুলো বলার জন্যই এত কিছু লিখলাম।
+          আমি জানি, শুধু একটা website বানিয়ে বা সুন্দর
+          কিছু কথা লিখে সব ভুল ঠিক করে ফেলা যায় না।
+        </p>
+
+        <p>
+          আমি চাই, তুই ভালো থাকিস, নিজের মনের কথাগুলো
+          বলতে পারিস, আর কখনো যেন মনে না হয় যে তোর
+          অনুভূতিগুলোকে কেউ গুরুত্ব দিচ্ছে না।
+        </p>
+
+        <p>
+          আমি আমার ভুলগুলো শুধরানোর চেষ্টা করব।
+          তোর কথা শুনব, তোকে বোঝার চেষ্টা করব,
+          আর নিজের কাজের মাধ্যমেও আমার যত্নটা দেখাতে চাই।
+        </p>
+
+        <p>
+          তোকে এখনই আমাকে ক্ষমা করতে হবে না।
+          সময় লাগলে আমি সেটা বুঝব।
+          তোর অনুভূতিগুলো আমার কাছে গুরুত্বপূর্ণ।
+        </p>
+
+        <p>
+          ভালো থাকিস, মণি।
+          আর নিজের খেয়াল রাখিস। 🥹❤️
+        </p>
+
+
+        <div class="letter-signature">
+
+          <span>অনেক ভালোবাসা রইল,</span>
+
+          <strong>তোরই গরু। 🐮💗</strong>
+
+        </div>
+
+      </div>
+
+
+      <!-- Restart Button -->
+
+      <button
+        class="ghost-btn restart-btn"
+        id="restartBtn"
+        type="button"
+      >
+        আবার শুরু থেকে দেখবি ↺
+      </button>
+
+
+      <p class="small-note">
+        কোনও তাড়া নেই, মণি।
+        তোর অনুভূতিগুলো আমার কাছে গুরুত্বপূর্ণ। ❤️
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <p>
+      তোর জন্য একটু ভালোবাসা,
+      একটু সাহস আর মন থেকে বলা সরি। ♡
+    </p>
+
+    <p class="footer-small">
+      শুধু তোর জন্য, মণি। 💗
+    </p>
+
+  </footer>
+
+
+  <!-- =========================================
+       BACKGROUND MUSIC
+       সাধারণ পেজে বাজানোর চেষ্টা করবে।
+       Page 4-এ JavaScript বন্ধ করবে।
+  ========================================== -->
+
+  <audio id="backgroundSong" autoplay loop>
+  <source src="ek_miniute.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="song">
+  <source src="page-song.mp3" type="audio/mpeg">
+</audio>
+
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+
+</body>
+</html>
